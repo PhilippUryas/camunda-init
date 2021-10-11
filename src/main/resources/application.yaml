@@ -3,4 +3,4 @@ spring:
     driverClassName:
     url:
     username:
-    password: 
+    password:

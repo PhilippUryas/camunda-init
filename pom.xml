@@ -12,6 +12,7 @@
     <artifactId>demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>uralsibcamunda</name>
+    <!-- SPIN -->
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -27,7 +28,33 @@
         <java.version>11</java.version>
     </properties>
 
+
     <dependencies>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>2.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+
+            <groupId>org.camunda.spin</groupId>
+            <artifactId>camunda-spin-core</artifactId>
+            <version>1.10.0</version>
+            <scope>provided</scope>
+
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.camunda.bpm</groupId>
+            <artifactId>camunda-engine-plugin-spin</artifactId>
+            <version>7.15.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- SPIN -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -54,7 +81,7 @@
         <dependency>
             <groupId>org.camunda.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter</artifactId>
-            <version>7.13.0</version>
+            <version>7.15.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -72,12 +99,12 @@
         <dependency>
             <groupId>org.camunda.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
-            <version>7.13.0</version>
+            <version>7.15.0</version>
         </dependency>
         <dependency>
             <groupId>org.camunda.bpm.springboot</groupId>
             <artifactId>camunda-bpm-spring-boot-starter-rest</artifactId>
-            <version>7.13.0</version>
+            <version>7.15.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
